@@ -25,7 +25,7 @@ public class TradeController {
             if (trades.isEmpty()) {
                 return ResponseEntity.noContent().build();
             }
-            
+            System.out.println("Successfully executed getOpenTrades()");
             return ResponseEntity.ok(trades);
         } catch (Exception e) {
             e.printStackTrace();
